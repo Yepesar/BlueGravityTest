@@ -13,36 +13,87 @@ MonoBehaviour:
   m_Name: PlayerInventory
   m_EditorClassIdentifier: 
   inventoryID: Inventory
-  inventoryMaxSlots: 10
+  inventoryMaxSlots: 20
   inventoryMaxStack: 100
   inventorySlots:
-  - slotID: EmptySlot
-    itemsOnSlot: []
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
     slotMaxCapacity: 100
-  - slotID: EmptySlot
-    itemsOnSlot: []
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
     slotMaxCapacity: 100
-  - slotID: EmptySlot
-    itemsOnSlot: []
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
     slotMaxCapacity: 100
-  - slotID: EmptySlot
-    itemsOnSlot: []
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
     slotMaxCapacity: 100
-  - slotID: EmptySlot
-    itemsOnSlot: []
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
     slotMaxCapacity: 100
-  - slotID: EmptySlot
-    itemsOnSlot: []
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
     slotMaxCapacity: 100
-  - slotID: EmptySlot
-    itemsOnSlot: []
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
     slotMaxCapacity: 100
-  - slotID: EmptySlot
-    itemsOnSlot: []
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
     slotMaxCapacity: 100
-  - slotID: EmptySlot
-    itemsOnSlot: []
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
     slotMaxCapacity: 100
-  - slotID: EmptySlot
-    itemsOnSlot: []
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
     slotMaxCapacity: 100
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
+    slotMaxCapacity: 100
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
+    slotMaxCapacity: 100
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
+    slotMaxCapacity: 100
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
+    slotMaxCapacity: 100
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
+    slotMaxCapacity: 100
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
+    slotMaxCapacity: 100
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
+    slotMaxCapacity: 100
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
+    slotMaxCapacity: 100
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
+    slotMaxCapacity: 100
+  - slotID: TestItems
+    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+    amountOnSlot: 1
+    slotMaxCapacity: 100
+  testingItem: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
