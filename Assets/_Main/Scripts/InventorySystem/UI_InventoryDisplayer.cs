@@ -9,6 +9,11 @@ public class UI_InventoryDisplayer : MonoBehaviour
     [SerializeField] private GameObject uiInventorySlotPrefab;
     [SerializeField] private Transform slotsParent;
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        DisplayInventory();
+    }
 
     [ContextMenu("Testing_DisplayInventory")]
     private void DisplayInventory()
@@ -25,7 +30,7 @@ public class UI_InventoryDisplayer : MonoBehaviour
                 UI_InventorySlot slotScript = slot.GetComponent<UI_InventorySlot>();
                 if (slotScript != null )
                 {
-                    slotScript.InitSlot(inventoryData.InventorySlots[i]); // inject the slot data from inventory to script
+                    slotScript.InitSlot(inventoryData.InventorySlots[i],this); // inject the slot data from inventory to script
                 }
             }          
         }
@@ -43,15 +48,5 @@ public class UI_InventoryDisplayer : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }

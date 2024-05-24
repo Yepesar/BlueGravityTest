@@ -35,6 +35,48 @@ public class SO_InventoryData : ScriptableObject
         }
     }
 
+    #region Inventory Methods
+
+    public void AddItemToInventory(SO_ItemData item)
+    {
+        // First try to stack items in existing slots
+        for (int i = 0; i < inventorySlots.Count; i++)
+        {
+            if (inventorySlots[i].ItemOnSlot == item && !inventorySlots[i].IsFull())
+            {
+                inventorySlots[i].AddItemToSlot(item);
+                return; // Exit once the item is added
+            }
+        }
+
+        // If no existing slot can accommodate the item, try to find an empty slot
+        for (int i = 0; i < inventorySlots.Count; i++)
+        {
+            if (inventorySlots[i].ItemOnSlot == null)
+            {
+                inventorySlots[i].AddItemToSlot(item);
+                return; // Exit once the item is added
+            }
+        }
+
+        // All fail, no available space
+        Debug.Log("There is not enough space in the inventory...");
+    }
+
+    public bool IsInventoryFull()
+    {
+        for (int i = 0; i < inventorySlots.Count; i++)
+        {
+            if (inventorySlots[i].ItemOnSlot == null || !inventorySlots[i].IsFull())
+            {
+                return false; // Found an available space
+            }
+        }
+        return true; // No available space found
+    }
+
+    #endregion
+
     #region Testing
 
     [ContextMenu("Testing_PopulateInventory")]
@@ -76,20 +118,11 @@ public class InventorySlotData
         if (itemOnSlot == null)
         {
             itemOnSlot = itemData;
+            slotID = itemData.name + "s";
         }
-        else
+        else if (itemOnSlot != itemData) // Items do not match
         {
-            if (itemOnSlot != itemData) // Error case, items dont match
-            {
-                return;
-            }
-        }
-
-
-        if (amountOnSlot == 0)
-        {
-            string slotNewID = itemData.name + "s";
-            slotID = slotNewID;
+            return;
         }
 
         if (amountOnSlot < slotMaxCapacity)
@@ -110,5 +143,10 @@ public class InventorySlotData
                 itemOnSlot = null;
             }
         }
+    }
+
+    public bool IsFull()
+    {
+        return amountOnSlot >= slotMaxCapacity;
     }
 }

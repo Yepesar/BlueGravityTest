@@ -8,17 +8,13 @@ public class UI_ShopSlot : UI_InventorySlot
 {
     [SerializeField] private TextMeshProUGUI priceText;
     [SerializeField] private TextMeshProUGUI itemNameText;
+    [SerializeField] private Button slotButton; //On click should sell to player
 
-    private Button slotButton; //On click should sell to player
+    
 
-    private void Start()
+    public override void InitSlot(InventorySlotData newData, UI_InventoryDisplayer ownerDisplayer)
     {
-        slotButton = GetComponent<Button>();
-    }
-
-    public override void InitSlot(InventorySlotData newData)
-    {
-        base.InitSlot(newData);
+        base.InitSlot(newData,ownerDisplayer);
     }
 
     public override void UpdateSlotData()
@@ -26,5 +22,21 @@ public class UI_ShopSlot : UI_InventorySlot
         base.UpdateSlotData();
         priceText.text = "$" + SlotData.ItemOnSlot.ItemPrice.ToString();
         itemNameText.text = SlotData.ItemOnSlot.ItemName.ToString();
+
+        slotButton.onClick.RemoveAllListeners();
+        slotButton.onClick.AddListener(()=> SellItemOnSlotToPlayer());
+    }
+
+    private void SellItemOnSlotToPlayer()
+    {
+        TransactionManager transactionManager = TransactionManager.Singleton;
+        if (transactionManager)
+        {
+            transactionManager.SellItemToPlayer(SlotData.ItemOnSlot);
+        }
+        else
+        {
+            Debug.Log("Cant find Transaction Manager Singleton!");
+        }
     }
 }

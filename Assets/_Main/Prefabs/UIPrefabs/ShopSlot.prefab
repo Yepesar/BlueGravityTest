@@ -134,6 +134,7 @@ MonoBehaviour:
   amountText: {fileID: 3630180971169953772}
   priceText: {fileID: 3622580685530781831}
   itemNameText: {fileID: 2333370599970940074}
+  slotButton: {fileID: 2876524713441558344}
 --- !u!222 &3224918539643026653
 CanvasRenderer:
   m_ObjectHideFlags: 0
