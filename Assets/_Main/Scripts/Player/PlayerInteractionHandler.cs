@@ -14,7 +14,7 @@ public class PlayerInteractionHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //interactionAction = actions.FindActionMap("Player").FindAction("Interact");
+        interactionAction = actions.FindActionMap("Player").FindAction("Interact");
     }
 
     // Update is called once per frame

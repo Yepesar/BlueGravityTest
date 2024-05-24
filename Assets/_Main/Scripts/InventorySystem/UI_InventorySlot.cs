@@ -11,23 +11,27 @@ public class UI_InventorySlot : MonoBehaviour
 
     private InventorySlotData slotData;
 
-    public void InitSlot(InventorySlotData newData)
+    public Image IconImage { get => iconImage; }
+    public TextMeshProUGUI AmountText { get => amountText;}
+    public InventorySlotData SlotData { get => slotData; set => slotData = value; }
+
+    public virtual void InitSlot(InventorySlotData newData)
     {
-        slotData = newData;
+        SlotData = newData;
         UpdateSlotData();
     }
 
-    public void UpdateSlotData()
+    public virtual void UpdateSlotData()
     {
-        if (slotData != null)
+        if (SlotData != null)
         {
-            iconImage.sprite = slotData.ItemOnSlot.ItemIcon;
-            amountText.text = slotData.AmountOnSlot.ToString();
+            IconImage.sprite = SlotData.ItemOnSlot.ItemIcon;
+            AmountText.text = SlotData.AmountOnSlot.ToString();
         }
         else
         {
-            iconImage.sprite = null;
-            amountText.text = "";
+            IconImage.sprite = null;
+            AmountText.text = "";
         }
         
     }
