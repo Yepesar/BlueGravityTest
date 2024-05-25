@@ -12,10 +12,7 @@ public class UI_InventoryDisplayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        inventoryData.onItemAdded += DisplayInventory; // Update inventory with database event
-
-
-        DisplayInventory();
+        inventoryData.onItemAdded += DisplayInventory; // Update inventory with database event     
     }
 
     [ContextMenu("Testing_DisplayInventory")]
@@ -51,5 +48,9 @@ public class UI_InventoryDisplayer : MonoBehaviour
         }
     }
 
-   
+    private void OnEnable()
+    {
+        DisplayInventory();
+    }
+
 }

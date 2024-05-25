@@ -22,6 +22,7 @@ public class PlayerInteractionHandler : MonoBehaviour
     {
         if (lastInteraction != null && interactionAction.triggered)
         {
+            lastInteraction.Interact();
             Debug.Log("Interacting!");
             lastInteraction = null;
         }
