@@ -13,15 +13,47 @@ MonoBehaviour:
   m_Name: ShopInventory
   m_EditorClassIdentifier: 
   inventoryID: Inventory
-  inventoryMaxSlots: 20
+  inventoryMaxSlots: 10
   inventoryMaxStack: 100
   inventorySlots:
-  - slotID: Hats
-    itemOnSlot: {fileID: 11400000, guid: 3bffd83b33a54f343b6d887188b96ba6, type: 2}
+  - slotID: Cap
+    itemOnSlot: {fileID: 11400000, guid: 1eb4a438eb0de7e40ac1768b59087f73, type: 2}
     amountOnSlot: 100
     slotMaxCapacity: 100
-  - slotID: Test
-    itemOnSlot: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
+  - slotID: Jeans
+    itemOnSlot: {fileID: 11400000, guid: ae0cdfea40a9f824983ce3c85413fa9b, type: 2}
+    amountOnSlot: 100
+    slotMaxCapacity: 100
+  - slotID: Hat
+    itemOnSlot: {fileID: 11400000, guid: 639a6fa0b8944f348a3b8d7ce51cafa8, type: 2}
+    amountOnSlot: 100
+    slotMaxCapacity: 100
+  - slotID: Jacket
+    itemOnSlot: {fileID: 11400000, guid: 4650e70193aad324f851e7661372878f, type: 2}
+    amountOnSlot: 100
+    slotMaxCapacity: 100
+  - slotID: MageHat
+    itemOnSlot: {fileID: 11400000, guid: ba2412f35c6947f498b6930b6737c900, type: 2}
+    amountOnSlot: 100
+    slotMaxCapacity: 100
+  - slotID: MageRobes
+    itemOnSlot: {fileID: 11400000, guid: c007372c1d243764ba8aff92341e42b2, type: 2}
+    amountOnSlot: 100
+    slotMaxCapacity: 100
+  - slotID: MageSkirt
+    itemOnSlot: {fileID: 11400000, guid: 9fe7c01d60a4f2548bca828e36cb663d, type: 2}
+    amountOnSlot: 100
+    slotMaxCapacity: 100
+  - slotID: WhitePants
+    itemOnSlot: {fileID: 11400000, guid: 31af6656ae6924249ac04a14840309e4, type: 2}
+    amountOnSlot: 100
+    slotMaxCapacity: 100
+  - slotID: WhiteShirt
+    itemOnSlot: {fileID: 11400000, guid: ce21e914230a5a64aa2a67da60f30c24, type: 2}
+    amountOnSlot: 100
+    slotMaxCapacity: 100
+  - slotID: Apple
+    itemOnSlot: {fileID: 11400000, guid: 215cea312bebf8d428156175e3cd610e, type: 2}
     amountOnSlot: 100
     slotMaxCapacity: 100
   testingItem: {fileID: 11400000, guid: 6bb0e2eda61b2fb4396c1389007512b7, type: 2}
