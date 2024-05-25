@@ -54,18 +54,22 @@ public class UI_InventoryDisplayer : MonoBehaviour
 
     public void SetSelecteSlot(UI_InventorySlot newSelectedSlot)
     {
-        selectedSlot = newSelectedSlot;
-        ItemCategory catg = selectedSlot.SlotData.ItemOnSlot.ItemCategory;
+        if (newSelectedSlot != null && newSelectedSlot.SlotData.ItemOnSlot != null)
+        {
+            selectedSlot = newSelectedSlot;
+            ItemCategory catg = selectedSlot.SlotData.ItemOnSlot.ItemCategory;
 
-        //Item can be equipped
-        if ( catg == ItemCategory.OutfitTop || catg == ItemCategory.OutfitMiddle || catg == ItemCategory.OutfitBotton)
-        {
-            equipButton.interactable = true;
+            //Item can be equipped
+            if (catg == ItemCategory.OutfitTop || catg == ItemCategory.OutfitMiddle || catg == ItemCategory.OutfitBotton)
+            {
+                equipButton.interactable = true;
+            }
+            else
+            {
+                equipButton.interactable = false;
+            }
         }
-        else
-        {
-            equipButton.interactable = false;
-        }
+        
     }
 
     private void CleanInventory()
