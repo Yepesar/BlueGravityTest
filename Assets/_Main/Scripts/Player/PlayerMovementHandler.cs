@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovementHandler : MonoBehaviour
 {
     [SerializeField] private SO_PlayerStats playerStats;
+    [SerializeField] private CharacterAnimController characterAnimController;
     [SerializeField] private Rigidbody2D rb;
 
     public InputActionAsset actions;
@@ -29,5 +30,14 @@ public class PlayerMovementHandler : MonoBehaviour
     {
         Vector2 movement = new Vector2(moveInput.x, moveInput.y) * playerStats.PlayerMovementSpeed * Time.fixedDeltaTime;
         rb.velocity = movement;
+
+        if (rb.velocity.magnitude > 0)
+        {
+            characterAnimController.PlayWalk();
+        }
+        else
+        {
+            characterAnimController.PlayIdle();
+        }
     }
 }

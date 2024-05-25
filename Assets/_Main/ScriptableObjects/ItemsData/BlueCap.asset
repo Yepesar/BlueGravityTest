@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: BlueCap
   itemCategory: 1
-  itemIcon: {fileID: 1633058946, guid: 9f65a54a6e5ccba45bdae91e2ddfdb93, type: 3}
+  itemIcon: {fileID: -1872363416, guid: 9f65a54a6e5ccba45bdae91e2ddfdb93, type: 3}
   itemPrice: 25

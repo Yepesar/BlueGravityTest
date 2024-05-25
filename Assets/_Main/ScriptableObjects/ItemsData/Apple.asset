@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Apple
   itemCategory: 0
-  itemIcon: {fileID: -1872363416, guid: 9f65a54a6e5ccba45bdae91e2ddfdb93, type: 3}
+  itemIcon: {fileID: 330753744, guid: 9f65a54a6e5ccba45bdae91e2ddfdb93, type: 3}
   itemPrice: 5

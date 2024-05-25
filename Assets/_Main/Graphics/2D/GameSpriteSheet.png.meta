@@ -101,7 +101,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 20
-        y: 840
+        y: 320
         width: 60
         height: 110
       alignment: 0
@@ -122,7 +122,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 100
-        y: 840
+        y: 320
         width: 60
         height: 100
       alignment: 0
@@ -143,7 +143,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 840
+        y: 320
         width: 80
         height: 80
       alignment: 0
@@ -164,7 +164,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 340
-        y: 840
+        y: 320
         width: 80
         height: 80
       alignment: 0
@@ -184,10 +184,10 @@ TextureImporter:
       name: GameSpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 30
-        y: 680
-        width: 180
-        height: 130
+        x: 560
+        y: 230
+        width: 240
+        height: 170
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +205,10 @@ TextureImporter:
       name: GameSpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 410
-        y: 680
-        width: 60
-        height: 40
+        x: 880
+        y: 320
+        width: 80
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,10 +226,10 @@ TextureImporter:
       name: GameSpriteSheet_6
       rect:
         serializedVersion: 2
-        x: 500
-        y: 680
-        width: 50
-        height: 20
+        x: 30
+        y: 160
+        width: 180
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +247,10 @@ TextureImporter:
       name: GameSpriteSheet_7
       rect:
         serializedVersion: 2
-        x: 570
-        y: 680
-        width: 70
-        height: 30
+        x: 410
+        y: 160
+        width: 60
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +268,10 @@ TextureImporter:
       name: GameSpriteSheet_8
       rect:
         serializedVersion: 2
-        x: 740
-        y: 680
-        width: 40
-        height: 50
+        x: 500
+        y: 160
+        width: 50
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,9 +289,9 @@ TextureImporter:
       name: GameSpriteSheet_9
       rect:
         serializedVersion: 2
-        x: 410
-        y: 630
-        width: 60
+        x: 570
+        y: 160
+        width: 70
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -310,10 +310,10 @@ TextureImporter:
       name: GameSpriteSheet_10
       rect:
         serializedVersion: 2
-        x: 490
-        y: 630
-        width: 60
-        height: 30
+        x: 740
+        y: 160
+        width: 40
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +331,10 @@ TextureImporter:
       name: GameSpriteSheet_11
       rect:
         serializedVersion: 2
-        x: 580
-        y: 630
-        width: 60
-        height: 30
+        x: 880
+        y: 80
+        width: 80
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,9 +352,9 @@ TextureImporter:
       name: GameSpriteSheet_12
       rect:
         serializedVersion: 2
-        x: 420
-        y: 580
-        width: 40
+        x: 410
+        y: 110
+        width: 60
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -373,9 +373,9 @@ TextureImporter:
       name: GameSpriteSheet_13
       rect:
         serializedVersion: 2
-        x: 500
-        y: 580
-        width: 40
+        x: 490
+        y: 110
+        width: 60
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -394,9 +394,9 @@ TextureImporter:
       name: GameSpriteSheet_14
       rect:
         serializedVersion: 2
-        x: 590
-        y: 580
-        width: 40
+        x: 580
+        y: 110
+        width: 60
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -407,6 +407,69 @@ TextureImporter:
       bones: []
       spriteID: d4275a298d2af664ab3b0240d3312d41
       internalID: 671663526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 60
+        width: 40
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375799674deaed645827466304e4f031
+      internalID: 713885562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 60
+        width: 40
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74afc288a2c58c247bb72adda363f162
+      internalID: 1181702392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 60
+        width: 40
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b898a8fde88324643ad5e7eb7a95fe18
+      internalID: 1147193073
       vertices: []
       indices: 
       edges: []
@@ -429,6 +492,9 @@ TextureImporter:
       GameSpriteSheet_12: -1336492820
       GameSpriteSheet_13: 2145762500
       GameSpriteSheet_14: 671663526
+      GameSpriteSheet_15: 713885562
+      GameSpriteSheet_16: 1181702392
+      GameSpriteSheet_17: 1147193073
       GameSpriteSheet_2: 1331443949
       GameSpriteSheet_3: 1828645175
       GameSpriteSheet_4: -226959408

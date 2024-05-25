@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Jacket
   itemCategory: 2
-  itemIcon: {fileID: -1751387272, guid: 9f65a54a6e5ccba45bdae91e2ddfdb93, type: 3}
+  itemIcon: {fileID: -1336492820, guid: 9f65a54a6e5ccba45bdae91e2ddfdb93, type: 3}
   itemPrice: 100

@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerName: Player
   playerInventory: {fileID: 11400000, guid: 9a0d44c6810fa0941b5d6f8aad294f75, type: 2}
-  playerMovementSpeed: 110
-  playerMoney: 9000
+  playerMovementSpeed: 80
+  playerMoney: 500
+  equippedTop: {fileID: 0}
+  equippedMiddle: {fileID: 0}
+  equippedBotton: {fileID: 0}

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: MageSkirt
   itemCategory: 3
-  itemIcon: {fileID: 671663526, guid: 9f65a54a6e5ccba45bdae91e2ddfdb93, type: 3}
+  itemIcon: {fileID: 1147193073, guid: 9f65a54a6e5ccba45bdae91e2ddfdb93, type: 3}
   itemPrice: 100
