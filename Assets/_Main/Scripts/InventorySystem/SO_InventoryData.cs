@@ -20,6 +20,10 @@ public class SO_InventoryData : ScriptableObject
     [Header("Testing")]
     [SerializeField] private SO_ItemData testingItem;
 
+    //Events
+    public Action onItemAdded;
+
+
     public string InventoryID { get => inventoryID;}
     public int InventoryMaxSlots { get => inventoryMaxSlots;}
     public int InventoryMaxStack { get => inventoryMaxStack;}
@@ -45,6 +49,7 @@ public class SO_InventoryData : ScriptableObject
             if (inventorySlots[i].ItemOnSlot == item && !inventorySlots[i].IsFull())
             {
                 inventorySlots[i].AddItemToSlot(item);
+                onItemAdded?.Invoke();
                 return; // Exit once the item is added
             }
         }
@@ -55,6 +60,7 @@ public class SO_InventoryData : ScriptableObject
             if (inventorySlots[i].ItemOnSlot == null)
             {
                 inventorySlots[i].AddItemToSlot(item);
+                onItemAdded?.Invoke();
                 return; // Exit once the item is added
             }
         }

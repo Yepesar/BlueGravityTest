@@ -10,8 +10,6 @@ public class UI_ShopSlot : UI_InventorySlot
     [SerializeField] private TextMeshProUGUI itemNameText;
     [SerializeField] private Button slotButton; //On click should sell to player
 
-    
-
     public override void InitSlot(InventorySlotData newData, UI_InventoryDisplayer ownerDisplayer)
     {
         base.InitSlot(newData,ownerDisplayer);
@@ -33,6 +31,7 @@ public class UI_ShopSlot : UI_InventorySlot
         if (transactionManager)
         {
             transactionManager.SellItemToPlayer(SlotData.ItemOnSlot);
+            OwnerDisplayer.DisplayInventory();
         }
         else
         {
