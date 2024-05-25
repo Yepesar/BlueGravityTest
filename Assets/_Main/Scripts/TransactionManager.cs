@@ -19,13 +19,14 @@ public class TransactionManager : MonoBehaviour
             Destroy(this);
         }
     }
-
-    // Start is called before the first frame update
-    void Start()
+ 
+    public void SellItemToShop(SO_ItemData itemToSell, int quantity)
     {
-        
+        //Do transaction
+        int gains = itemToSell.ItemPrice * quantity;
+        playerStats.PlayerInventory.RemoveItemFromInventory(itemToSell, quantity);
+        playerStats.PlayerMoney += gains;
     }
-   
 
     public void SellItemToPlayer(SO_ItemData itemToSell)
     {

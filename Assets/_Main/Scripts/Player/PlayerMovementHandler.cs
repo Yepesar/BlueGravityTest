@@ -5,8 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovementHandler : MonoBehaviour
 {
-    public float movementSpeed = 2f;
-    
+    [SerializeField] private SO_PlayerStats playerStats;
     [SerializeField] private Rigidbody2D rb;
 
     public InputActionAsset actions;
@@ -28,7 +27,7 @@ public class PlayerMovementHandler : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector2 movement = new Vector2(moveInput.x, moveInput.y) * movementSpeed * Time.fixedDeltaTime;
+        Vector2 movement = new Vector2(moveInput.x, moveInput.y) * playerStats.PlayerMovementSpeed * Time.fixedDeltaTime;
         rb.velocity = movement;
     }
 }

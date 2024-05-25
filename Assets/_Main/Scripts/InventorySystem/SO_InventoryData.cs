@@ -22,6 +22,7 @@ public class SO_InventoryData : ScriptableObject
 
     //Events
     public Action onItemAdded;
+    public Action onItemRemoved;
 
 
     public string InventoryID { get => inventoryID;}
@@ -67,6 +68,22 @@ public class SO_InventoryData : ScriptableObject
 
         // All fail, no available space
         Debug.Log("There is not enough space in the inventory...");
+    }
+
+    public void RemoveItemFromInventory(SO_ItemData item, int quantity)
+    {
+        for (int i = 0; i < inventorySlots.Count; i++)
+        {
+            if (inventorySlots[i].ItemOnSlot == item)
+            {
+                inventorySlots[i].RemoveItemFromSlot(quantity);
+                onItemRemoved?.Invoke();
+                return; // Exit once the item is removed
+            }
+        }
+
+        // If no item found in the inventory
+        Debug.Log("Item not found in the inventory...");
     }
 
     public bool IsInventoryFull()
@@ -137,14 +154,15 @@ public class InventorySlotData
         }
     }
 
-    public void RemoveItemFromSlot()
+    public void RemoveItemFromSlot(int quantity)
     {
-        if (amountOnSlot > 0)
+        if (itemOnSlot != null && amountOnSlot > 0)
         {
-            amountOnSlot--;
+            amountOnSlot -= quantity;
 
-            if (amountOnSlot == 0)
+            if (amountOnSlot <= 0)
             {
+                amountOnSlot = 0;
                 slotID = "EmptySlot";
                 itemOnSlot = null;
             }

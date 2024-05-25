@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerInteractionHandler : MonoBehaviour
 {
-    public InputActionAsset actions;
+    [SerializeField] private InputActionAsset actions;
 
     private IInteractable lastInteraction;
 
